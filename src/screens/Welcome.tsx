@@ -20,7 +20,7 @@ const WelcomeScreen = ({ navigation }: any) => {
           explore the wonders of this tropical paradise.
         </Text>
         <Image
-          source={ require('../assets/srilanka-tour-map.png')} 
+          source={ { uri: 'https://www.travelrightsrilanka.com/wp-content/uploads/2021/06/3c98641519fd1a5c47231c53471aab19.png' }} 
           style={styles.image}
         />
       </View>
