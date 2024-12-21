@@ -53,10 +53,12 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontFamily: 'cursive',
+        fontWeight: 'bold',
     textAlign: 'center',
-    color: '#333',
+    color: '#008000',
     marginTop: 16,
+    marginBottom: 40,
   },
   content: {
     alignItems: 'center',
@@ -71,8 +73,8 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   image: {
-    width: 300,
-    height: 200,
+    width: 400,
+    height: 535,
     borderRadius: 10,
     marginBottom: 20,
   },
