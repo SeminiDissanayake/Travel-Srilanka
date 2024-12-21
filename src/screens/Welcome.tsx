@@ -20,7 +20,7 @@ const WelcomeScreen = ({ navigation }: any) => {
           explore the wonders of this tropical paradise.
         </Text>
         <Image
-          source={{ uri: 'https://www.srilanka.travel/images/plan-your-trip/culture.jpg' }} // Replace with desired image URL
+          source={ require('../assets/srilanka-tour-map.png')} 
           style={styles.image}
         />
       </View>
