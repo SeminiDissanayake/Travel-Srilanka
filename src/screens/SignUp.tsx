@@ -17,12 +17,12 @@ const SignUpScreen = ({ navigation }: any) => {
       return;
     }
     Alert.alert('Success', 'Account created successfully!');
-    navigation.navigate('SignIn'); // Redirect to SignIn after successful sign-up
+    navigation.navigate('SignIn'); 
   };
 
   return (
     <View style={styles.container}>
-      {/* Header */}
+    
       <Text style={styles.header}>Create Your Account</Text>
 
       {/* Username Input */}
@@ -60,12 +60,12 @@ const SignUpScreen = ({ navigation }: any) => {
         secureTextEntry
       />
 
-      {/* Sign Up Button */}
+      
       <View style={styles.buttonContainer}>
         <Button title="Sign Up" onPress={handleSignUp} />
       </View>
 
-      {/* Back to Login */}
+      
       <TouchableOpacity onPress={() => navigation.navigate('SignIn')}>
         <Text style={styles.backText}>Already have an account? <Text style={styles.backLink}>Sign In</Text></Text>
       </TouchableOpacity>

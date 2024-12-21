@@ -10,10 +10,10 @@ const WelcomeScreen = ({ navigation }: any) => {
 
   return (
     <View style={styles.container}>
-      {/* Header Section */}
+      
       <Text style={styles.header}>Welcome to Travel Sri Lanka, {user?.username}!</Text>
 
-      {/* Content Section */}
+      
       <View style={styles.content}>
         <Text style={styles.description}>
           Discover the beauty of Sri Lanka. From golden beaches to lush greenery, 

@@ -26,10 +26,10 @@ const SignInScreen = ({ navigation }: any) => {
 
   return (
     <View style={styles.container}>
-      {/* Header */}
-      <Text style={styles.header}>Welcome to Travel Sri Lanka</Text>
+      
+      <Text style={styles.header}>Welcome {'\n'}to{'\n'} Travel Sri Lanka</Text>
 
-      {/* Logo/Image */}
+      
       <Image
         source={{ uri: 'https://www.srilanka.travel/images/logo.png' }} // Replace with your desired image URL
         style={styles.logo}
@@ -53,7 +53,7 @@ const SignInScreen = ({ navigation }: any) => {
         <Button title="Login" onPress={handleLogin} />
       </View>
 
-      {/* Sign-Up Redirect */}
+
       <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
         <Text style={styles.signupText}>
           Don't have an account? <Text style={styles.signupLink}>Sign Up</Text>
@@ -74,15 +74,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   header: {
-    fontSize: 24,
+    fontSize: 25,
+    textAlign: 'center',
+    fontFamily: 'times',
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 30,
     color: '#333',
   },
   logo: {
     width: 150,
     height: 150,
-    marginBottom: 30,
+    marginBottom: 20,
     borderRadius: 75,
   },
   input: {

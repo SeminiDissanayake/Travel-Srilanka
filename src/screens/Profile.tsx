@@ -10,22 +10,22 @@ const ProfileScreen = ({ navigation }: any) => {
 
   const handleLogout = () => {
     dispatch(logout());
-    navigation.navigate('SignIn'); // Navigate back to SignIn after logging out
+    navigation.navigate('SignIn'); 
   };
 
   return (
     <View style={styles.container}>
-      {/* Profile Header */}
+      
       <Text style={styles.header}>Your Profile</Text>
 
-      {/* User Details */}
+     
       <View style={styles.detailsContainer}>
         <Text style={styles.label}>Username:</Text>
         <Text style={styles.value}>{user?.username || 'N/A'}</Text>
       </View>
 
     
-      {/* Logout Button */}
+      
       <View style={styles.buttonContainer}>
         <Button title="Logout" onPress={handleLogout} />
       </View>
